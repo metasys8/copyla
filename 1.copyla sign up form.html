@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CopyLa – Sign Up</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1a2a6c, #2a0845);
+      color: #fff;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 450px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 14px 16px;
+      margin: 8px 0 16px;
+      border: none;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      font-size: 16px;
+    }
+
+    .input-field::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .membership-info {
+      margin: 20px 0;
+      line-height: 1.6;
+    }
+
+    .check-line, .radio-line {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 12px 0;
+      cursor: pointer;
+    }
+
+    input[type="checkbox"], input[type="radio"] {
+      width: 18px;
+      height: 18px;
+      margin: 0;
+      flex-shrink: 0;
+      cursor: pointer;
+    }
+
+    label {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .section-title {
+      margin: 24px 0 12px;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 14px;
+      margin-top: 24px;
+      border: none;
+      border-radius: 10px;
+      background: #2ecc71;
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .submit-btn:hover {
+      background: #27ae60;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 style="text-align:center; margin-bottom:24px;">Create Your CopyLa Account</h2>
+
+    <input type="text" class="input-field" placeholder="Full Name">
+    <input type="text" class="input-field" placeholder="Country">
+    <input type="email" class="input-field" placeholder="Email Address">
+    <input type="password" class="input-field" placeholder="Create Password">
+    <input type="password" class="input-field" placeholder="Confirm Password">
+
+    <div class="membership-info">
+      <h3>Membership: RM 2.00 per month</h3>
+      <div class="check-line">
+        <input type="checkbox" id="note" checked disabled>
+        <label for="note">1 month access. Renew to continue. No lifetime membership.</label>
+      </div>
+
+      <div class="check-line">
+        <input type="checkbox" id="auto-renew">
+        <label for="auto-renew">Auto-renew each month (optional)</label>
+      </div>
+    </div>
+
+    <h3 class="section-title">Choose Payment Method:</h3>
+
+    <div class="radio-line">
+      <input type="radio" name="payment" id="debit">
+      <label for="debit">💳 Debit Card (Visa / Mastercard)</label>
+    </div>
+
+    <div class="radio-line">
+      <input type="radio" name="payment" id="credit">
+      <label for="credit">💳 Credit Card (Visa / Mastercard)</label>
+    </div>
+
+    <div class="radio-line">
+      <input type="radio" name="payment" id="online">
+      <label for="online">🏦 Online Banking (FPX)</label>
+    </div>
+
+    <div class="radio-line">
+      <input type="radio" name="payment" id="tng">
+      <label for="tng">📱 Touch 'n Go eWallet</label>
+    </div>
+
+    <div class="radio-line">
+      <input type="radio" name="payment" id="telco">
+      <label for="telco">📞 Telco Billing (Digi / Maxis)</label>
+    </div>
+
+   <div class="check-line" style="margin-top:24px;">
+  <input type="checkbox" id="age-confirm">
+  <label for="age-confirm">
+    I confirm I am 18+ years old — OR under 18 with parent/guardian consent.<br>
+    I have read and agree to the 
+    <a href="terms.html" target="_blank" style="color:#87ceeb; text-decoration:underline;">Terms & Conditions</a>
+  </label>
+</div>
+
+    <button class="submit-btn">Complete Sign Up</button>
+  </div>
+</body>
+</html>

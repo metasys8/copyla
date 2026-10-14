@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CopyLa — My Space</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+    body { background: #ffffff; color: #1a1a1a; padding-bottom: 75px; }
+
+    .top { 
+      display: flex; justify-content: space-between; align-items: center; 
+      padding: 15px 20px; border-bottom: 1px solid #dddddd;
+    }
+    .logo { font-size: 24px; font-weight: bold; }
+    .blue { color: #007bff; }
+    .yellow { color: #ffcc00; }
+    .paint-btn { 
+      font-size: 24px; border: none; background: #fef3c7; 
+      cursor: pointer; padding: 6px 10px; border-radius: 50%;
+    }
+
+    .global { 
+      padding: 12px 20px; text-align: center; 
+      background: linear-gradient(90deg, #007bff, #ffcc00); color: #ffffff;
+    }
+    .global-label { font-size: 13px; opacity: 0.9; }
+    .global-num { font-size: 24px; font-weight: bold; margin-top: 4px; }
+
+    .profile { padding: 25px 20px; border-bottom: 1px solid #dddddd; }
+    .p-row { display: flex; gap: 15px; align-items: flex-start; }
+    .avatar { 
+      width: 60px; height: 60px; background: #007bff; border-radius: 50%; 
+      display: flex; align-items: center; justify-content: center; font-size: 24px;
+    }
+    .p-name { font-size: 20px; font-weight: bold; margin-bottom: 4px; }
+    .p-flag { color: #666666; margin-bottom: 12px; }
+    .nums { display: flex; gap: 25px; flex-wrap: wrap; }
+    .num h4 { font-size: 18px; }
+    .num p { font-size: 12px; color: #666666; }
+
+    .latest { padding: 20px; }
+    .latest h3 { font-size: 16px; margin-bottom: 15px; }
+    .video-card { background: #f5f5f5; border-radius: 10px; border: 1px solid #dddddd; overflow: hidden; }
+    .video-player { 
+      width: 100%; height: 200px; background: #e9e9e9; 
+      display: flex; align-items: center; justify-content: center; font-size: 40px;
+    }
+    .video-controls { 
+      display: flex; justify-content: space-between; align-items: center; 
+      padding: 12px 15px; flex-wrap: wrap; gap: 10px;
+    }
+    .ctrl-left { display: flex; gap: 12px; flex-wrap: wrap; }
+    .ctrl-btn { border: none; background: none; cursor: pointer; font-size: 14px; }
+    .share-btn { 
+      background: #007bff; color: #ffffff; border: none; 
+      padding: 8px 16px; border-radius: 6px; font-weight: bold; cursor: pointer;
+    }
+
+    .bottom-nav { 
+      position: fixed; bottom: 0; left: 0; right: 0; 
+      display: flex; justify-content: space-around; padding: 10px 5px; 
+      background: #f5f5f5; border-top: 1px solid #dddddd;
+    }
+    .nav-item { text-align: center; cursor: pointer; padding: 5px; }
+    .nav-icon { font-size: 18px; }
+    .nav-label { font-size: 11px; color: #666666; margin-top: 2px; }
+  </style>
+</head>
+<body>
+
+  <div class="top">
+    <h1 class="logo"><span class="blue">C</span><span class="yellow">🔥</span> CopyLa</h1>
+    <button class="paint-btn">🎨</button>
+  </div>
+
+  <div class="global">
+    <p class="global-label">Total Members Worldwide</p>
+    <p class="global-num">0</p>
+  </div>
+
+  <div class="profile">
+    <div class="p-row">
+      <div class="avatar">📷</div>
+      <div>
+        <h2 class="p-name">Your Username</h2>
+  <p class="p-flag">my Malaysia <img src="https://flagcdn.com/w20/my.png" alt="Malaysia" style="height:15px; vertical-align:middle; margin-left:6px;"></p>
+        <div class="nums">
+          <div class="num"><h4>0</h4><p>Followers</p></div>
+          <div class="num"><h4>0</h4><p>Following</p></div>
+          <div class="num"><h4>RM 0.00</h4><p>Earnings</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="latest">
+    <h3>Latest Content</h3>
+    <div class="video-card">
+      <div class="video-player">▶️</div>
+     <div class="video-player">
+  <video width="100%" controls>
+    <source src="BABYMONSTER - 'SUGAR HONEY ICE TEA' PERFORMANCE VIDEO.mp4" type="video/mp4">
+  </video>
+</div>
+
+<div class="video-controls" style="display:flex; visibility:visible; opacity:1; justify-content:space-between; align-items:center; padding:12px; margin-top:10px;
+  <div class="ctrl-left" style="display:flex; gap:18px;">
+    <button class="ctrl-btn" id="likeBtn" style="❤️ Like</button">="border:none; background:none; font-size:16px; padding:6px 8px; cursor:pointer;">❤️ Like</button>
+    <button class="ctrl-btn" id="followBtn" style="➕ Follow</button">="border:none; background:none; font-size:16px; padding:6px 8px; cursor:pointer;">➕ Follow</button>
+    <button class="ctrl-btn" id="CommentBtn" style="💬 Comment</button">="border:none; background:none; font-size:16px; padding:6px 8px; cursor:pointer;">💬 Comment</button>
+    <button class="ctrl-btn" id="saveBtn" style="⭐ Save</button">="border:none; background:none; font-size:16px; padding:6px 8px; cursor:pointer;">⭐ Save</button>
+  </div>
+  <button class="share-btn" style="🔗 Share</button">="background:#0099ff; color:white; border:none; border-radius:8px; font-size:18px; font-weight:bold; padding:10px 24px; cursor:pointer;">📤 Share</button>
+</div>
+  </div>
+
+  <div class="bottom-nav">
+    <div class="nav-item">
+      <div class="nav-icon">🎵</div>
+      <div class="nav-label">Music Videos</div>
+    </div>
+    <div class="nav-item">
+      <div class="nav-icon">📰</div>
+      <div class="nav-label">News</div>
+    </div>
+    <div class="nav-item">
+      <div class="nav-icon">📢</div>
+      <div class="nav-label">Advertisement</div>
+    </div>
+    <div class="nav-item">
+      <div class="nav-icon">🤝</div>
+      <div class="nav-label">Charity</div>
+    </div>
+    <div class="nav-item">
+      <div class="nav-icon">⚙️</div>
+      <div class="nav-label">More</div>
+    </div>
+  </div>
+
+</body>
+<script>
+document.getElementById('likeBtn').onclick=function(){
+  this.style.color=this.style.color==='#ff4757'?'':'#ff4757';
+  this.innerText=this.innerText==='❤️ Like'?'❤️ Liked':'❤️ Like';
+};
+document.getElementById('followBtn').onclick=function(){
+  this.innerText=this.innerText==='➕ Follow'?'✅ Following':'➕ Follow';
+};
+document.getElementById('commentBtn').onclick=function(){alert('Comments open ✅');};
+document.getElementById('saveBtn').onclick=function(){
+  this.style.color=this.style.color==='#ffd32a'?'':'#ffd32a';
+  this.innerText=this.innerText==='⭐ Save'?'⭐ Saved':'⭐ Save';
+};
+document.getElementById('shareBtn').onclick=function(){alert('Share open ✅');};
+</script>
+</html>

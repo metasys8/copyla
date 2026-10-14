@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CopyLa — Music</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+        body {
+            background: #111;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 30px;
+        }
+        .banner {
+            height: 120px;
+            border: 2px solid #333;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            background: #1a1a1a;
+            color: #888;
+        }
+        h1 { text-align: center; margin-bottom: 25px; font-size: 22px; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 25px;
+            flex: 1;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+        }
+        .flag {
+            width: 100%;
+            height: 90px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .name { font-size: 14px; text-align: center; }
+        .footer {
+            text-align: center;
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid #222;
+        }
+        .brand { font-size: 22px; font-weight: bold; color: #ffcc00; margin-bottom: 5px; }
+        .tag1 { font-size: 15px; color: #ccc; margin-bottom: 3px; }
+        .tag2 { font-size: 16px; font-weight: bold; color: #ffcc00; }
+    </style>
+</head>
+<body>
+
+<div class="banner">Banner Space</div>
+<h1>Choose Your Country</h1>
+
+<div class="grid">
+    <!-- TOP ROW → PUT YOUR FILE NAME INSIDE "" -->
+    <div class="card">
+        <img src="https://flagcdn.com/h120/my.png" class="flag" alt="Malaysia">
+        <div class="name">Malaysia</div>
+    </div>
+    <div class="card">
+        <img src="https://flagcdn.com/h120/ph.png" class="flag" alt="Phillippines">
+        <div class="name">Philippines</div>
+    </div>
+    <div class="card">
+        <img src="https://flagcdn.com/h120/th.png" class="flag" alt="Thailand">
+        <div class="name">Thailand</div>
+    </div>
+    <div class="card">
+        <img src="https://flagcdn.com/h120/in.png" class="flag" alt="India">
+        <div class="name">India</div>
+    </div>
+    <div class="card">
+        <img src="https://flagcdn.com/h120/vn.png" class="flag" alt="Vietnam">
+        <div class="name">Vietnam</div>
+    </div>
+    <div class="card">
+        <img src="https://flagcdn.com/h120/kh.png" class="flag" alt="Cambodia">
+        <div class="name">Cambodia</div>
+    </div>
+
+    <!-- BOTTOM ROW → PUT YOUR FILE NAME INSIDE "" -->
+    <div class="card">
+        <img src="https://flagcdn.com/h120/sg.png" class="flag" alt="Singapore">
+        <div class="name">Singapore</div>
+    </div>
+    <div class="card">
+        <img src="https://flagcdn.com/h120/tw.png" class="flag" alt="Taiwan">
+        <div class="name">Taiwan</div>
+    </div>
+    <div class="card">
+        <img src="https://flagcdn.com/h120/kr.png" class="flag" alt="South Korea">
+        <div class="name">South Korea</div>
+    </div>
+    <div class="card">
+        <img src="https://flagcdn.com/h120/jp.png" class="flag" alt="Japan">
+        <div class="name">Japan</div>
+    </div>
+    <div class="card">
+        <img src="https://flagcdn.com/h120/id.png" class="flag" alt="Indonesia">
+        <div class="name">Indonesia</div>
+    </div>
+    <div class="card">
+        <img src="https://flagcdn.com/h120/us.png" class="flag" alt="United States">
+        <div class="name">USA</div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="brand">CopyLa</div>
+    <div class="tag1">The New Generation Sound Sensation</div>
+    <div class="tag2">Build Your Empire — Starts Now</div>
+</div>
+
+</body>
+</html>

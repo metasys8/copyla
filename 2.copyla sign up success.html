@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CopyLa — Your Home</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    body {
+      background: linear-gradient(135deg, #0f0f23, #1a1a3c);
+      color: #fff;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container { max-width: 900px; margin: 0 auto; }
+    
+    /* HEADER */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #333;
+    }
+    .logo { font-size: 28px; font-weight: bold; color: #ffd700; }
+    .user-info { text-align: right; }
+    .user-name { font-weight: bold; font-size: 17px; }
+    .member-since { font-size: 12px; color: #888; }
+    
+    /* BALANCE CARDS */
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 30px; }
+    .card {
+      background: rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+    .card-label { font-size: 14px; color: #aaa; margin-bottom: 8px; }
+    .card-value { font-size: 24px; font-weight: bold; color: #4ecdc4; }
+    .card-note { font-size: 11px; color: #666; margin-top: 5px; }
+    
+    /* ACTION BUTTONS */
+    .actions { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-bottom: 30px; }
+    .action-btn {
+      background: linear-gradient(135deg, #ffd700, #ffb300);
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      padding: 18px;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .action-btn:hover { transform: scale(1.03); }
+    .action-btn.secondary {
+      background: rgba(78,205,196,0.15);
+      color: #4ecdc4;
+      border: 1px solid #4ecdc4;
+    }
+    
+    /* QUICK LINKS */
+    .section-title { font-size: 18px; margin: 25px 0 12px; color: #ffd700; }
+    .quick-links { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 25px; }
+    .link-tag {
+      background: rgba(255,255,255,0.08);
+      padding: 10px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .link-tag:hover { background: rgba(255,215,0,0.2); }
+    
+    /* STATUS */
+    .status-box {
+      background: rgba(76,175,80,0.1);
+      border-left: 3px solid #4CAF50;
+      padding: 15px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- TOP HEADER -->
+  <div class="header">
+    <div class="logo">CopyLa</div>
+    <div class="user-info">
+      <div class="user-name">Welcome, Member!</div>
+      <div class="member-since">Active Member — Forever Access ✅</div>
+    </div>
+  </div>
+
+  <!-- STATUS MESSAGE -->
+  <div class="status-box">
+    ✅ Account Activated — RM 2.00 One-Time Fee Paid. No Expiry. No Recurring Charge.
+  </div>
+
+  <!-- BAL
